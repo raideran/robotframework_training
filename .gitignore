@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# Robot framework generated files
+*.html
+*.xml
+*.log
+*.jpg
