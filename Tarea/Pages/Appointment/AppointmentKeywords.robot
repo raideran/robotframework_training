@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  ../resource.robot
+Resource  resources.robot
 
 *** Variables ***
 

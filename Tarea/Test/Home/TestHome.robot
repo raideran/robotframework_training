@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  ../../Pages/Home/HomeKeywords.robot
+Resource  resources.robot
 
 *** Test Cases ***
 Test Open Home Page

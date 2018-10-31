@@ -1,16 +1,9 @@
 *** Settings ***
-Resource  ../../Pages/Login/LoginKeywords.robot
-Resource  ../../Pages/Appointment/AppointmentKeywords.robot
-Test Setup  Log in Page   John Doe   ThisIsNotAPassword
-Test Teardown
+Resource  resources.robot
+Test Setup  Log in Page   ${valid_user}   ${valid_password}
 
 
 *** Test Cases ***
-Test Open Appointment Page
-    Open Appointment Page
-    [Teardown]  Close Browser
-
-
 Test Open Appointment Page
     Open Appointment Page
     [Teardown]  Close Browser

@@ -1,12 +1,12 @@
 *** Settings ***
-Resource  ../resource.robot
+Resource  resources.robot
 
 *** Variables ***
 ${URL}  /profile.php#login
 
-${UserField}        css:#txt-username
-${PasswordField}    css:#txt-password
-${LoginButton}      css:#btn-login
+${UserField}        id:txt-username
+${PasswordField}    id:txt-password
+${LoginButton}      id:btn-login
 
 *** Keywords ***
 Open Login Page

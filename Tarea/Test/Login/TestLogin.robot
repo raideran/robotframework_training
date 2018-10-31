@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  ../../Pages/Login/LoginKeywords.robot
+Resource  resources.robot
 
 *** Test Cases ***
 Test Open Login Page
@@ -7,6 +7,6 @@ Test Open Login Page
     [Teardown]  Close Browser
 
 Test Enter Valid Data
-    Log in Page   John Doe   ThisIsNotAPassword
+    Log in Page   ${valid_user}   ${valid_password}
     Sleep  3s
     [Teardown]  Close Browser
