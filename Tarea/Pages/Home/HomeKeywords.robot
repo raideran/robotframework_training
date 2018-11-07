@@ -2,9 +2,10 @@
 Resource  resources.robot
 
 *** Variables ***
-${MenuLoginLink}   xpath://a[contains(text(),'Login')]
-${NavMenu}         id:menu-toggle
-${Title}           CURA Healthcare Service
+${MenuLoginLink}        xpath://a[contains(text(),'Login')]
+${MakeAppointmentBtn}   id:btn-make-appointment
+${NavMenu}              id:menu-toggle
+${Title}                CURA Healthcare Service
 
 
 *** Keywords ***
@@ -16,6 +17,9 @@ Click NavMenu
 
 Click Login Menu Link
     Click Element   ${MenuLoginLink}
+
+Click Make Appointment Button
+    Click Element   ${MakeAppointmentBtn}
 
 Validate Page Opened
    Title Should Be   ${Title}

@@ -7,7 +7,7 @@ Test Open Home Page
     Validate Page Opened
     [Teardown]  Close Browser
 
-Test Navigate Login Page
+Test Navigate Login Page NavMenu
     Open Home Page
     Click NavMenu
     Click Login Menu Link

@@ -14,7 +14,6 @@ Open Login Page
 
 Log in Page
     [Arguments]     ${user}    ${password}
-    Open Login Page
     Input Text      ${UserField}    ${user}
     Input Text      ${PasswordField}   ${password}
     Click Element   ${LoginButton}
